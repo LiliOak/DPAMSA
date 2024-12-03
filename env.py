@@ -15,7 +15,10 @@ class Environment:
     def __init__(self, data,
                  nucleotide_size=50, text_size=25,
                  show_nucleotide_name=True):
-        self.data = [[nucleotides_map[data[i][j]] for j in range(len(data[i]))] for i in range(len(data))]
+        try:
+            self.data = [[nucleotides_map[data[i][j]] for j in range(len(data[i]))] for i in range(len(data))]
+        except:
+            raise KeyError("This sequence is sussy ",data)
         self.row = len(data)
         self.max_len = max([len(data[i]) for i in range(len(data))])
         self.show_nucleotide_name = show_nucleotide_name

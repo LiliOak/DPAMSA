@@ -1,7 +1,4 @@
-import dataset3
-import dataset4
 import dataset5
-import dataset6
 from env import Environment
 from dqn import DQN
 import config
@@ -10,11 +7,9 @@ import os
 import torch
 import sys
 
-dataset = dataset5
-
+dataset=dataset5
 
 def main():
-    config.device_name = "cuda:{}".format(sys.argv[1])
     config.device = torch.device(config.device_name)
     multi_train(dataset.file_name, 0, 25, truncate_file=True)
 
@@ -45,12 +40,9 @@ def multi_train(tag="", start=0, end=-1, truncate_file=False):
         with open(report_file_name, 'w') as _:
             _.truncate()
 
-    for index, name in enumerate(dataset.datasets[start:end if end != -1 else len(dataset.datasets)], start):
-        if not hasattr(dataset, name):
-            continue
-        seqs = getattr(dataset, name)
-
-        env = Environment(seqs)
+    for name, seqs in enumerate(dataset.datasets[start:end if end != -1 else len(dataset.datasets)], start):
+    
+        env = Environment(seqs[1])
         agent = DQN(env.action_number, env.row, env.max_len, env.max_len * env.max_reward)
         p = tqdm(range(config.max_episode))
         p.set_description(name)
