@@ -7,11 +7,11 @@ GAP_PENALTY = -4
 MISMATCH_PENALTY = -4
 MATCH_REWARD = 4
 
-update_iteration = 128
+update_iteration = 16 #128
 
-batch_size = 128
-max_episode = 6000
-replay_memory_size = 1000
+batch_size = 10 #128
+max_episode = 2000 #6000
+replay_memory_size = 50 #1000
 
 alpha = 0.0001
 gamma = 1

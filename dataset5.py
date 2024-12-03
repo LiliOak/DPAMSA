@@ -1,7 +1,7 @@
 import os
 import csv
 
-dataset_folder = "unaligned_sequences_csv"
+dataset_folder = "unaligned_sequences_csv_mini_60_8_10"
 
 def load_sequences(file_name):
     sequences = []

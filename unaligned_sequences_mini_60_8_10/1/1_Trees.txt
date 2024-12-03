@@ -1,0 +1,15 @@
+Tue Dec  3 16:42:04 2024
+
+This is the true tree in three slightly different formats.
+
+Note that the unrooted tree without node labels is also saved to the file 1_True.tre for use as an input file.
+
+Rooted tree without node numbers:
+(((A1:1.1333, A2:0.1167):1.7333,(A3:1.5167, A4:0.1833):1.4167):1.9167,((A5:0.8333, A6:0.7833):0.6833,(A7:0.4333, A8:1.0500):0.2667):1.1333);
+
+Rooted tree with node numbers:
+(((A1:1.1333, A2:0.1167)3:1.7333,(A3:1.5167, A4:0.1833)4:1.4167)2:1.9167,((A5:0.8333, A6:0.7833)6:0.6833,(A7:0.4333, A8:1.0500)7:0.2667)5:1.1333);
+
+Unrooted tree without node numbers:
+(((A5:0.833300,A6:0.783300):0.683300,(A7:0.433300,A8:1.050000):0.266700):1.133300,(A1:1.133300,A2:0.116700):3.650000,(A3:1.516700,A4:0.183300):3.333400);
+

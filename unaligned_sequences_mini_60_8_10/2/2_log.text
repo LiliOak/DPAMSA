@@ -1,0 +1,83 @@
+EvolveAGene 4.0
+Tue Dec  3 16:35:06 2024
+
+The root sequence came from file 2.txt.
+
+
+The settings for this simulation were:
+Option 1	Topology: Symmetric
+Option 2	Number of taxa: 8
+Option 3	Average branch length: 1.0
+Option 4	Average probability of accepting an amino acid replacement: 0.1
+Option 5	Probability of accepting an insertion: 0.03
+Option 6	Probability of accepting a deletion: 0.08
+Option 7	Selection over sequence is: constant
+Option 8	Selection over branches is: constant
+Option 9	modifier: 2
+Option 10	Alignment file format is: FASTA
+Option 11	Ratio of recombination to mutation events is: 0
+Option 12	Length of the recombination tract (fraction of genome length) is: 0.01
+Option 13	Probability of recombination coming from outside is: 0.01
+
+Branch	Left	Right	Branch Length
+1		1	2	80
+2		1	5	73
+3		2	3	3
+4		2	4	106
+5		3	A1	2
+6		3	A2	29
+7		4	A3	43
+8		4	A4	20
+9		5	6	92
+10		5	7	115
+11		6	A5	1
+12		6	A6	95
+13		7	A7	106
+14		7	A8	102
+
+On branch 1 there were 61 silent and 19 replacement mutations, 0 deletions and 0 insertions.
+On branch 2 there were 52 silent and 21 replacement mutations, 0 deletions and 0 insertions.
+On branch 3 there were 3 silent and 0 replacement mutations, 0 deletions and 0 insertions.
+On branch 4 there were 75 silent and 31 replacement mutations, 0 deletions and 0 insertions.
+On branch 5 there were 1 silent and 1 replacement mutations, 0 deletions and 0 insertions.
+On branch 6 there were 22 silent and 7 replacement mutations, 0 deletions and 0 insertions.
+On branch 7 there were 34 silent and 9 replacement mutations, 0 deletions and 0 insertions.
+On branch 8 there were 14 silent and 6 replacement mutations, 0 deletions and 0 insertions.
+On branch 9 there were 71 silent and 20 replacement mutations, 1 deletions and 0 insertions.
+On branch 10 there were 80 silent and 34 replacement mutations, 1 deletions and 0 insertions.
+On branch 11 there were 1 silent and 0 replacement mutations, 0 deletions and 0 insertions.
+On branch 12 there were 70 silent and 24 replacement mutations, 1 deletions and 0 insertions.
+On branch 13 there were 79 silent and 27 replacement mutations, 0 deletions and 0 insertions.
+On branch 14 there were 79 silent and 23 replacement mutations, 0 deletions and 0 insertions.
+
+There were a total of 642 silent and 222 replacement base substitutions.
+
+There were 0 recombinations and 867 mutations.
+True rho/theta is 0.
+True r/m is undefined because there were no recombinations.
+
+dN/dS (also known as Ka/Ks or Omega) = 0.0917
+
+Kappa (ts/tv) = 1.0187
+
+Fraction of base substitutions in each category:
+A<->G = 0.1748
+A<->C = 0.1516
+A<->T = 0.1794
+C<->G = 0.0139
+C<->T = 0.3299
+G<->T = 0.1505
+
+
+There were a total of 3 deletions and 0 insertions.
+
+Cartright's lambda is the ratio of indels to base substitutions.
+Lambda = 0.0035. (Cartwright, R.A. 2005.  Bioinformatics 21 Suppl 3 iii31 - iii38)
+
+
+The tree length is 14.4500.
+
+The mean branch length was 1.0321 
+
+Simulation took 1 seconds.
+
