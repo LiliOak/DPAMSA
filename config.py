@@ -10,7 +10,7 @@ MATCH_REWARD = 4
 update_iteration = 16 #128
 
 batch_size = 10 #128
-max_episode = 2000 #6000
+max_episode = 200 #6000
 replay_memory_size = 50 #1000
 
 alpha = 0.0001
@@ -20,7 +20,7 @@ delta = 0.05
 
 decrement_iteration = math.ceil(max_episode * 0.8 / (epsilon // delta))
 
-device_name = "cuda:1" if torch.cuda.is_available() else "cpu"
+device_name = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 weight_path = "../result/weight"
 score_path = "../result/score"

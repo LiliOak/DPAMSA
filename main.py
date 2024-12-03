@@ -45,7 +45,7 @@ def multi_train(tag="", start=0, end=-1, truncate_file=False):
         env = Environment(seqs[1])
         agent = DQN(env.action_number, env.row, env.max_len, env.max_len * env.max_reward)
         p = tqdm(range(config.max_episode))
-        p.set_description(name)
+        p.set_description(str(name))
 
         for _ in p:
             state = env.reset()
